@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", (event) => {
   const modal = document.getElementById("myModal");
   const btn = document.getElementById("openModal");
-  const span = document.querySelector(".close"); // Assuming there's only one '.close' class in your modal
+  const span = document.querySelector(".close");
   const addTaskButton = document.getElementById("addTask");
   const taskInput = document.getElementById("taskInput");
   const taskList = document.getElementById("taskList");
