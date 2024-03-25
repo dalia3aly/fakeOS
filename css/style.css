@@ -43,13 +43,9 @@
   padding: 10px 20px;
   font-size: 1em;
   color: #000000;
-  background-color: #4caa4c;
   border: none;
   border-radius: 5px;
   margin-bottom: 2em;
-}
-#addTask:hover {
-  background-color: #449d44;
 }
 
 .modal {
@@ -211,13 +207,9 @@
   padding: 10px 20px;
   font-size: 1em;
   color: #000000;
-  background-color: #4caa4c;
   border: none;
   border-radius: 5px;
   margin-bottom: 2em;
-}
-#addTask:hover {
-  background-color: #449d44;
 }
 
 .weather-container {
@@ -264,7 +256,6 @@
   box-sizing: border-box;
 }
 
-/* Main Desktop View */
 #desktop {
   height: 100vh;
   background-image: url("../assets/img/vista.jpg");
@@ -310,7 +301,6 @@
   background: linear-gradient(to bottom, #ffffff, #ececec);
   color: #000000;
   width: auto;
-  /* Hide initially..will be shown on click */
   display: none;
 }
 

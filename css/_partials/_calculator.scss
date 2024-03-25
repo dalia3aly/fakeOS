@@ -1,0 +1,41 @@
+
+.calculator {
+    background: linear-gradient(to bottom, #ececec, #d0d0d0); // light gradient background
+    border: 1px solid #b4b4b4;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .buttons {
+      display: grid;
+      align-items: center;
+      grid-template-columns: repeat(4, 1fr);
+      grid-gap: 10px;
+      margin-top: 10px;
+      font-weight: 400;
+      padding: 0;
+  }
+  
+  .op-button {
+    background: linear-gradient(to top, #dbdbdb, #c0c0c0); // glossy button background
+    border-color: #b2b2b2;
+  }
+  
+  #display {
+    width: 100%;
+    height: 60px;
+    font-size: 26px;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 5px;
+    background: linear-gradient(to top, #1c1c1c, #000000); // same for consistency
+    box-shadow: inset 0 2px 2px rgba(255, 255, 255, 0.1);
+    font-family: $primary-font;
+    color: #ffffff;
+  }
