@@ -33,4 +33,4 @@ const updateClock = () => {
 }
 updateClock();
 console.log("Clock is running");
-//setInterval(updateClock, 10000); // debug line - update every 10 seconds
+setInterval(updateClock, 1000);

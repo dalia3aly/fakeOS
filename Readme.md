@@ -8,7 +8,7 @@ FakeOS is a web-based simulation of an operating system interface, designed to s
 - Interactive Icons: Clickable icons for launching applications such as a To-Do app, a Calculator plus a Weather widget.
 - Taskbar: A partially functional taskbar positioned at the bottom of the screen, featuring a Start menuand a clock displaying the current date and time.
 - Calculator App: A simple yet powerful calculator for performing basic arithmetic operations.
-- Weather Widget: A dynamic weather application that displays current weather conditions - External API documentation: https://rapidapi.com/community/api/open-weather13.
+- Weather Widget: A dynamic weather application that displays current weather conditions. To be able to run the widget, kindly get your own API Key - External API documentation: https://rapidapi.com/community/api/open-weather13.
 
 ## Technologies Used
 - HTML: For structuring the web-based operating system interface.
