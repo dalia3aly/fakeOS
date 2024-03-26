@@ -27,10 +27,9 @@ const updateClock = () => {
     // format the date as a string
     let dateString = `${day}/${month}/${year}`;
     document.getElementById('date').textContent = `${day}/${month}/${year}`;
-
-    console.log("Time: ", `${hours}:${minutes}:${seconds}`);
-    console.log("Date: ", dateString);
 }
+
 updateClock();
+
 console.log("Clock is running");
 setInterval(updateClock, 1000);
