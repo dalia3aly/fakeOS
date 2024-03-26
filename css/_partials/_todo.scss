@@ -1,0 +1,55 @@
+// toDo modal :
+
+.modal-content-todo {
+    width: 30%;
+    font-family: $primary-font;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+  
+    h3 {
+      color: #333;
+      margin-bottom: 1em;
+      font-size: 1.5rem;
+      font-weight: 600;
+      font-family: $primary-font;
+      margin-bottom: 10px;
+    }
+  
+    input[type="text"] {
+      margin-bottom: 1em;
+      padding: 10px;
+      font-size: 1em;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+  
+    #taskList {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+  
+      li {
+        background-color: #dddddd;  // background for tasks
+        margin-bottom: 0.5em;
+        padding: 10px;
+        border-radius: 5px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      }
+    }
+  }
+
+  #addTask {
+    padding: 10px 20px;
+    font-size: 1em;
+    color: #000000;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 2em;
+  }

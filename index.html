@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Windows Vista</title>
+    <script src="js/dom.js" defer></script>
+    <script src="js/app.js" defer></script>
+    <script src="js/toDo.js" defer></script>
+    <script src="js/weatherWidget.js" defer></script>
+    <script src="js/calculator.js" defer></script>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div id="desktop">
+      <!-- Wallpaper -->
+      <div id="wallpaper"></div>
+
+      <!-- Desktop Icons -->
+      <div class="icon-columns">
+        <div class="desktop-icons" id="win-icon">
+          <img src="assets/img/win-icon/myComput.png" alt="my computer" />
+          <img src="assets/img/win-icon/mDoc.png" alt="my documents" />
+          <img src="assets/img/win-icon/network.png" alt="Network" />
+          <img src="assets/img/win-icon/recycleBin.png" alt="recycle bin" />
+          <img src="assets/img/win-icon/IEx.png" alt="Internet Explorer" />
+          <img src="assets/img/win-icon/control.png" alt="Control panel" />
+          <img src="assets/img/win-icon/fakeOs.png" alt="Folder" />
+          <img src="assets/img/win-icon/morseCode.png" alt="Folder" />
+
+          <!-- ToDo app modal -->
+          <a href="#" id="openModal"
+            ><img src="assets/img/win-icon/todoList.png" alt="Open Modal"
+          /></a>
+
+          <div id="myModal" class="modal">
+            <div class="modal-content modal-content-todo">
+              <span class="close modalClose">&times;</span>
+              <h3>ToDo List</h3>
+              <input type="text" id="taskInput" placeholder="New Task" />
+              <button id="addTask">Add Task</button>
+              <ul id="taskList"></ul>
+            </div>
+          </div>
+
+          <!-- Calculator App Modal-->
+          <div class="container-calculator">
+            <div id="calc-app" class="modal modal--calc" style="display: none">
+              <div class="modal-content modal-content-calculator">
+                <span class="close-calculator modalClose">&times;</span>
+                <div class="calculator">
+                  <input type="text" id="display" readonly="" />
+                  <div class="buttons">
+                    <!-- Calculator buttons as displayed -->
+
+                    <button class="op-button" data-op="√">√</button>
+                    <button class="op-button" data-op="^2">^2</button>
+                    <button class="op-button" data-op="backspace">DEL</button>
+                    <button class="op-button" data-op="clear">C</button>
+
+                    <button class="num-button">1</button>
+                    <button class="num-button">2</button>
+                    <button class="num-button">3</button>
+                    <button class="op-button" data-op="add">+</button>
+
+                    <button class="num-button">4</button>
+                    <button class="num-button">5</button>
+                    <button class="num-button">6</button>
+                    <button class="op-button" data-op="subtract">-</button>
+
+                    <button class="num-button">7</button>
+                    <button class="num-button">8</button>
+                    <button class="num-button">9</button>
+                    <button class="op-button" data-op="multiply">*</button>
+
+                    <button class="num-button">.</button>
+                    <button class="num-button">0</button>
+                    <button class="op-button" data-op="calculate">=</button>
+                    <button class="op-button" data-op="divide">/</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <a href="#" id="openCalcModal"
+              ><img src="assets/img/calc.png" alt="Calculator"
+            /></a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Weather Widget -->
+
+      <div class="weather-container">
+        <div class="weather-header">
+          <h2>Weather Now</h2>
+        </div>
+        <div id="weather-info" class="weather-info">
+          Loading weather data...
+        </div>
+      </div>
+
+      <!-- Footer Taskbar -->
+      <div id="taskbar">
+        <!-- Windows Icon -->
+        <div id="start-button">
+          <img src="assets/img/start.png" alt="Start" />
+        </div>
+
+        <!-- Start Menu Modal (initially hidden) -->
+        <div id="start-menu" class="start-menu" style="display: none">
+          <ul>
+            <li><img src="assets/img/win-icon/myComput.png" alt="my computer" /></li>
+            <li><img src="assets/img/win-icon/mDoc.png" alt="my documents" /></li>
+            <li><img src="assets/img/win-icon/network.png" alt="Network" /></li>
+            <li><img src="assets/img/win-icon/recycleBin.png" alt="recycle bin" /></li>
+            <li><img src="assets/img/win-icon/IEx.png" alt="Internet Explorer" /></li>
+            <li><img src="assets/img/win-icon/control.png" alt="Control panel" /></li>
+            <li><img src="assets/img/win-icon/fakeOs.png" alt="Folder" /></li>
+            <li><img src="assets/img/win-icon/morseCode.png" alt="Folder" /></li>
+          </ul>
+        </div>
+
+        <div id="time" class="taskbar-icon taskbar-icon-right" data-app="clock">
+          <div id="clock"></div>
+          <div id="date"></div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

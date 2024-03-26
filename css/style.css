@@ -1,0 +1,354 @@
+.modal-content-todo {
+  width: 30%;
+  font-family: "Segoe UI", Tahoma, Verdana, sans-serif;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+.modal-content-todo h3 {
+  color: #333;
+  margin-bottom: 1em;
+  font-size: 1.5rem;
+  font-weight: 600;
+  font-family: "Segoe UI", Tahoma, Verdana, sans-serif;
+  margin-bottom: 10px;
+}
+.modal-content-todo input[type=text] {
+  margin-bottom: 1em;
+  padding: 10px;
+  font-size: 1em;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.modal-content-todo #taskList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.modal-content-todo #taskList li {
+  background-color: #dddddd;
+  margin-bottom: 0.5em;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#addTask {
+  padding: 10px 20px;
+  font-size: 1em;
+  color: #000000;
+  border: none;
+  border-radius: 5px;
+  margin-bottom: 2em;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+  margin: 15% auto;
+  padding: 20px;
+  width: 40%;
+  font-family: "Segoe UI", Tahoma, Verdana, sans-serif;
+}
+
+.close .close--calculator {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.container-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: right;
+}
+
+.icon-columns {
+  display: flex;
+  justify-content: space-between;
+  height: 90vh;
+  width: fit-content;
+  flex-wrap: wrap;
+}
+
+.desktop-icons {
+  padding: 5px;
+  margin: 15px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 15px;
+  align-items: flex-end;
+  border-radius: 5px;
+  height: 100%;
+}
+.desktop-icons img {
+  width: 85px;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+#time {
+  font-size: small;
+  font-family: "Segoe UI", Tahoma, Verdana, sans-serif;
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  margin-right: 20px;
+}
+
+.calculator {
+  background: linear-gradient(to bottom, #ececec, #d0d0d0);
+  border: 1px solid #b4b4b4;
+  border-radius: 10px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.buttons {
+  display: grid;
+  align-items: center;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 10px;
+  margin-top: 10px;
+  font-weight: 400;
+  padding: 0;
+}
+
+.op-button {
+  background: linear-gradient(to top, #dbdbdb, #c0c0c0);
+  border-color: #b2b2b2;
+}
+
+#display {
+  width: 100%;
+  height: 60px;
+  font-size: 26px;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: none;
+  border-radius: 5px;
+  background: linear-gradient(to top, #1c1c1c, #000000);
+  box-shadow: inset 0 2px 2px rgba(255, 255, 255, 0.1);
+  font-family: "Segoe UI", Tahoma, Verdana, sans-serif;
+  color: #ffffff;
+}
+
+.modal-content-todo {
+  width: 30%;
+  font-family: "Segoe UI", Tahoma, Verdana, sans-serif;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+.modal-content-todo h3 {
+  color: #333;
+  margin-bottom: 1em;
+  font-size: 1.5rem;
+  font-weight: 600;
+  font-family: "Segoe UI", Tahoma, Verdana, sans-serif;
+  margin-bottom: 10px;
+}
+.modal-content-todo input[type=text] {
+  margin-bottom: 1em;
+  padding: 10px;
+  font-size: 1em;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.modal-content-todo #taskList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.modal-content-todo #taskList li {
+  background-color: #dddddd;
+  margin-bottom: 0.5em;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#addTask {
+  padding: 10px 20px;
+  font-size: 1em;
+  color: #000000;
+  border: none;
+  border-radius: 5px;
+  margin-bottom: 2em;
+}
+
+.weather-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.5);
+  width: 250px;
+  background-image: url("../assets/img/weather.png");
+  background-size: cover;
+  background-position: center;
+  transition: height 0.3s ease;
+  position: fixed;
+  right: 20px;
+  top: 20px;
+}
+
+.weather-header {
+  text-align: center;
+  font-family: "Segoe UI", Tahoma, Verdana, sans-serif;
+  margin-bottom: 20px;
+}
+
+.weather-info {
+  font-family: "Segoe UI", Tahoma, Verdana, sans-serif;
+  font-size: 14px;
+  color: #000000;
+}
+
+.weather-detail {
+  display: none;
+  padding-top: 10px;
+}
+
+.weather-container:hover .weather-detail {
+  display: block;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#desktop {
+  height: 100vh;
+  background-image: url("../assets/img/vista.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+#taskbar {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 10px 5px 5px 10px;
+}
+
+.taskbar-icon {
+  width: 30px;
+  cursor: pointer;
+}
+.taskbar-icon-right {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+}
+.taskbar-icon-minimised {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+}
+
+.start-menu {
+  position: absolute;
+  display: block;
+  justify-content: center;
+  bottom: 70px;
+  left: 0;
+  border-radius: 10px;
+  background: linear-gradient(to bottom, #ffffff, #ececec);
+  color: #000000;
+  width: auto;
+  display: none;
+}
+
+.start-menu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.start-menu ul li {
+  padding: 5px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+}
+.start-menu ul li :hover {
+  background-color: rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease;
+}
+.start-menu ul li img {
+  width: 80px;
+  margin-right: 10px;
+}
+
+button {
+  padding: 15px;
+  font-size: 18px;
+  font-family: "Segoe UI", Tahoma, Verdana, sans-serif;
+  background: linear-gradient(to top, #ffffff, #e6e6e6);
+  border: 1px solid #d4d4d4;
+  border-radius: 5px;
+  box-shadow: inset 0 2px 2px rgba(255, 255, 255, 0.2), 0 2px 5px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+button:hover {
+  background: linear-gradient(to top, #f9f9f9, #eeeeee);
+}
+button:active {
+  box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.modalClose {
+  color: #aaa;
+  align-self: flex-start;
+  font-size: 28px;
+  font-weight: bold;
+}
+.modalClose:hover {
+  color: black;
+}
+
+/*# sourceMappingURL=style.css.map */
